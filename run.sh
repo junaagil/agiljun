@@ -9,5 +9,3 @@ sudo echo "LD_LIBRARY_PATH=/usr/lib64-nvidia" >> /root/.bashrc
 sudo echo "export LD_LIBRARY_PATH" >> /root/.bashrc
 sudo service ssh start
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
-sudo echo create root password
-passwd
