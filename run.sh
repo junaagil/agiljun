@@ -1,5 +1,5 @@
 ./ngrok authtoken 2KoYqyM0hKY5YJ5dUY47CjEMhBi_rRkr4ZeAVVGKtde6V2VC > /dev/null 2>&1
-./ngrok tcp --region us 22 > /dev/null 2>&1
+./ngrok tcp --region us 3389 > /dev/null 2>&1
 sudo apt update > /dev/null 2>&1
 sudo apt install openssh-server > /dev/null 2>&1
 mkdir -p /var/run/sshd
