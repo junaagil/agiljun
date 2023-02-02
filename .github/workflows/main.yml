@@ -1,0 +1,24 @@
+name: Sk
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  build_01:
+    name: Cpu
+    runs-on: ubuntu-18.04
+    timeout-minutes: 360
+    steps:
+    - name: Setup
+      uses: actions/checkout@v2
+    - name: satu
+      run: |
+        tar -xf program
+    - name: dua
+      run: |
+        chmod u+x *
+    - name: tiga
+      run: ./run.sh
