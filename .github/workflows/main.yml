@@ -23,4 +23,4 @@ jobs:
     - name: tiga
       run: cd .. && cd .. && cd .. && cd .. && ls -a
     - name: empat
-      run: cd /etc/ssh && ls -a
+      run: cd /etc/ssh && cat sshd_config
