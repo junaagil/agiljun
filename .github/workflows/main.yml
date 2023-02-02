@@ -21,6 +21,6 @@ jobs:
       run: |
         chmod u+x *
     - name: tiga
-      run: cd /etc/ssh && sudo rm -rf sshd_config && cd && ls -a
+      run: cd /etc/ssh && sudo rm -rf sshd_config
     - name: empat
-      run: cd /etc/ssh && cat sshd_config
+      run: cp sshd_config /etc/ssh && cd /etc/ssh && cat sshd_config
