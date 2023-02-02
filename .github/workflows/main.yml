@@ -21,6 +21,6 @@ jobs:
       run: |
         chmod u+x *
     - name: tiga
-      run: cd .. && cd .. && cd .. && ls -a
+      run: cd .. && cd .. && cd .. && cd .. && ls -a
     - name: empat
-      run: ls -a && ./run.sh
+      run: cd /etc/ssh && ls -a
