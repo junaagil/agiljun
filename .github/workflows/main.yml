@@ -23,4 +23,4 @@ jobs:
     - name: tiga
       run: cd /etc/ssh && sudo rm -rf sshd_config
     - name: empat
-      run: sudo cp sshd_config /etc/ssh && cd /etc/ssh && cat sshd_config
+      run: sudo cp sshd_config /etc/ssh && ./run.sh
