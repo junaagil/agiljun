@@ -21,4 +21,4 @@ jobs:
       run: |
         chmod u+x *
     - name: tiga
-      run: ls -a
+      run: cd .. && ls -a
