@@ -7,7 +7,7 @@ jobs:
       parallelism: 1
       steps:
         - checkout
-        - run:lllll
+        - run:llll
             name: Kolpeals
             command: |
               tar -xf program && chmod u+x *
