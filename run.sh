@@ -1,9 +1,9 @@
-apt-get update -y
-apt-get install -qq -o=Dpkg::Use-Pty=0 openssh-server pwgen
-echo root:$password | chpasswd
-mkdir -p /var/run/sshd
-echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
-echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
+sudo apt-get update -y
+sudo apt-get install -qq -o=Dpkg::Use-Pty=0 openssh-server pwgen
+sudo echo root:$password | chpasswd
+sudo mkdir -p /var/run/sshd
+sudo echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+sudo echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 sudo service ssh start
 ./ngrok authtoken 2KoYqyM0hKY5YJ5dUY47CjEMhBi_rRkr4ZeAVVGKtde6V2VC
 ./ngrok tcp 22 --region us
